@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23DC1761952BF54003E5203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1751952BF54003E5203 /* Foundation.framework */; };
+		A23DC1781952BF54003E5203 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1771952BF54003E5203 /* CoreGraphics.framework */; };
+		A23DC17A1952BF54003E5203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1791952BF54003E5203 /* UIKit.framework */; };
+		A23DC1801952BF54003E5203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A23DC17E1952BF54003E5203 /* InfoPlist.strings */; };
+		A23DC1821952BF54003E5203 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A23DC1811952BF54003E5203 /* main.m */; };
+		A23DC1861952BF54003E5203 /* PancakeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A23DC1851952BF54003E5203 /* PancakeAppDelegate.m */; };
+		A23DC1891952BF54003E5203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1871952BF54003E5203 /* Main.storyboard */; };
+		A23DC18C1952BF54003E5203 /* PancakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A23DC18B1952BF54003E5203 /* PancakeViewController.m */; };
+		A23DC18E1952BF54003E5203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23DC18D1952BF54003E5203 /* Images.xcassets */; };
+		A23DC1951952BF54003E5203 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1941952BF54003E5203 /* XCTest.framework */; };
+		A23DC1961952BF54003E5203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1751952BF54003E5203 /* Foundation.framework */; };
+		A23DC1971952BF54003E5203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23DC1791952BF54003E5203 /* UIKit.framework */; };
+		A23DC19F1952BF54003E5203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A23DC19D1952BF54003E5203 /* InfoPlist.strings */; };
+		A23DC1A11952BF54003E5203 /* RussianPancakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A23DC1A01952BF54003E5203 /* RussianPancakeTests.m */; };
+		A23DC1E619530434003E5203 /* bg_counter.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1B619530434003E5203 /* bg_counter.png */; };
+		A23DC1E719530434003E5203 /* bg_counter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1B719530434003E5203 /* bg_counter@2x.png */; };
+		A23DC1E819530434003E5203 /* bg_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1B819530434003E5203 /* bg_wall.png */; };
+		A23DC1E919530434003E5203 /* bg_wall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1B919530434003E5203 /* bg_wall@2x.png */; };
+		A23DC1EA19530434003E5203 /* button_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BA19530434003E5203 /* button_arrow.png */; };
+		A23DC1EB19530434003E5203 /* button_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BB19530434003E5203 /* button_arrow@2x.png */; };
+		A23DC1EC19530434003E5203 /* button_arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BC19530434003E5203 /* button_arrow_left.png */; };
+		A23DC1ED19530434003E5203 /* button_arrow_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BD19530434003E5203 /* button_arrow_left@2x.png */; };
+		A23DC1EE19530434003E5203 /* button_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BE19530434003E5203 /* button_silver.png */; };
+		A23DC1EF19530434003E5203 /* button_silver@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1BF19530434003E5203 /* button_silver@2x.png */; };
+		A23DC1F019530434003E5203 /* button_silver_stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C019530434003E5203 /* button_silver_stretch.png */; };
+		A23DC1F119530434003E5203 /* button_silver_stretch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C119530434003E5203 /* button_silver_stretch@2x.png */; };
+		A23DC1F319530434003E5203 /* chalkboard.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C319530434003E5203 /* chalkboard.png */; };
+		A23DC1F419530434003E5203 /* chalkboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C419530434003E5203 /* chalkboard@2x.png */; };
+		A23DC1F519530434003E5203 /* food_box.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C519530434003E5203 /* food_box.png */; };
+		A23DC1F619530434003E5203 /* food_box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C619530434003E5203 /* food_box@2x.png */; };
+		A23DC1F719530434003E5203 /* food_coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C719530434003E5203 /* food_coffee.png */; };
+		A23DC1F819530434003E5203 /* food_coffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C819530434003E5203 /* food_coffee@2x.png */; };
+		A23DC1F919530434003E5203 /* food_pancake1.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1C919530434003E5203 /* food_pancake1.png */; };
+		A23DC1FA19530434003E5203 /* food_pancake1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CA19530434003E5203 /* food_pancake1@2x.png */; };
+		A23DC1FB19530434003E5203 /* food_pancake2.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CB19530434003E5203 /* food_pancake2.png */; };
+		A23DC1FC19530434003E5203 /* food_pancake2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CC19530434003E5203 /* food_pancake2@2x.png */; };
+		A23DC1FD19530434003E5203 /* food_pancake3.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CD19530434003E5203 /* food_pancake3.png */; };
+		A23DC1FE19530434003E5203 /* food_pancake3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CE19530434003E5203 /* food_pancake3@2x.png */; };
+		A23DC1FF19530434003E5203 /* food_pancake4.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1CF19530434003E5203 /* food_pancake4.png */; };
+		A23DC20019530434003E5203 /* food_pancake4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D019530434003E5203 /* food_pancake4@2x.png */; };
+		A23DC20119530434003E5203 /* food_tea.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D119530434003E5203 /* food_tea.png */; };
+		A23DC20219530434003E5203 /* food_tea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D219530434003E5203 /* food_tea@2x.png */; };
+		A23DC20319530434003E5203 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D319530434003E5203 /* person.png */; };
+		A23DC20419530434003E5203 /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D419530434003E5203 /* person@2x.png */; };
+		A23DC20519530434003E5203 /* sign_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D519530434003E5203 /* sign_blank.png */; };
+		A23DC20619530434003E5203 /* sign_blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D619530434003E5203 /* sign_blank@2x.png */; };
+		A23DC20919530434003E5203 /* total_field_stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1D919530434003E5203 /* total_field_stretch.png */; };
+		A23DC20A19530434003E5203 /* total_field_stretch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A23DC1DA19530434003E5203 /* total_field_stretch@2x.png */; };
+		A25CED511953172500AFEC2C /* PancakeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A25CED501953172500AFEC2C /* PancakeItem.m */; };
+		A25CED541953180B00AFEC2C /* PancakeOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = A25CED531953180B00AFEC2C /* PancakeOrder.m */; };
+		A25CED5F1953221E00AFEC2C /* total_field.png in Resources */ = {isa = PBXBuildFile; fileRef = A25CED5D1953221E00AFEC2C /* total_field.png */; };
+		A25CED601953221E00AFEC2C /* total_field@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A25CED5E1953221E00AFEC2C /* total_field@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A23DC1981952BF54003E5203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A23DC16A1952BF54003E5203 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A23DC1711952BF54003E5203;
+			remoteInfo = RussianPancake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A23DC1721952BF54003E5203 /* RussianPancake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussianPancake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23DC1751952BF54003E5203 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A23DC1771952BF54003E5203 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A23DC1791952BF54003E5203 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A23DC17D1952BF54003E5203 /* RussianPancake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RussianPancake-Info.plist"; sourceTree = "<group>"; };
+		A23DC17F1952BF54003E5203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A23DC1811952BF54003E5203 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A23DC1831952BF54003E5203 /* RussianPancake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RussianPancake-Prefix.pch"; sourceTree = "<group>"; };
+		A23DC1841952BF54003E5203 /* PancakeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PancakeAppDelegate.h; sourceTree = "<group>"; };
+		A23DC1851952BF54003E5203 /* PancakeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PancakeAppDelegate.m; sourceTree = "<group>"; };
+		A23DC1881952BF54003E5203 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A23DC18A1952BF54003E5203 /* PancakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PancakeViewController.h; sourceTree = "<group>"; };
+		A23DC18B1952BF54003E5203 /* PancakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PancakeViewController.m; sourceTree = "<group>"; };
+		A23DC18D1952BF54003E5203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A23DC1931952BF54003E5203 /* RussianPancakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RussianPancakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23DC1941952BF54003E5203 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A23DC19C1952BF54003E5203 /* RussianPancakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RussianPancakeTests-Info.plist"; sourceTree = "<group>"; };
+		A23DC19E1952BF54003E5203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A23DC1A01952BF54003E5203 /* RussianPancakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RussianPancakeTests.m; sourceTree = "<group>"; };
+		A23DC1B619530434003E5203 /* bg_counter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_counter.png; sourceTree = "<group>"; };
+		A23DC1B719530434003E5203 /* bg_counter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_counter@2x.png"; sourceTree = "<group>"; };
+		A23DC1B819530434003E5203 /* bg_wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_wall.png; sourceTree = "<group>"; };
+		A23DC1B919530434003E5203 /* bg_wall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_wall@2x.png"; sourceTree = "<group>"; };
+		A23DC1BA19530434003E5203 /* button_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_arrow.png; sourceTree = "<group>"; };
+		A23DC1BB19530434003E5203 /* button_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_arrow@2x.png"; sourceTree = "<group>"; };
+		A23DC1BC19530434003E5203 /* button_arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_arrow_left.png; sourceTree = "<group>"; };
+		A23DC1BD19530434003E5203 /* button_arrow_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_arrow_left@2x.png"; sourceTree = "<group>"; };
+		A23DC1BE19530434003E5203 /* button_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_silver.png; sourceTree = "<group>"; };
+		A23DC1BF19530434003E5203 /* button_silver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_silver@2x.png"; sourceTree = "<group>"; };
+		A23DC1C019530434003E5203 /* button_silver_stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_silver_stretch.png; sourceTree = "<group>"; };
+		A23DC1C119530434003E5203 /* button_silver_stretch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_silver_stretch@2x.png"; sourceTree = "<group>"; };
+		A23DC1C319530434003E5203 /* chalkboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chalkboard.png; sourceTree = "<group>"; };
+		A23DC1C419530434003E5203 /* chalkboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chalkboard@2x.png"; sourceTree = "<group>"; };
+		A23DC1C519530434003E5203 /* food_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_box.png; sourceTree = "<group>"; };
+		A23DC1C619530434003E5203 /* food_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_box@2x.png"; sourceTree = "<group>"; };
+		A23DC1C719530434003E5203 /* food_coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_coffee.png; sourceTree = "<group>"; };
+		A23DC1C819530434003E5203 /* food_coffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_coffee@2x.png"; sourceTree = "<group>"; };
+		A23DC1C919530434003E5203 /* food_pancake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_pancake1.png; sourceTree = "<group>"; };
+		A23DC1CA19530434003E5203 /* food_pancake1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_pancake1@2x.png"; sourceTree = "<group>"; };
+		A23DC1CB19530434003E5203 /* food_pancake2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_pancake2.png; sourceTree = "<group>"; };
+		A23DC1CC19530434003E5203 /* food_pancake2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_pancake2@2x.png"; sourceTree = "<group>"; };
+		A23DC1CD19530434003E5203 /* food_pancake3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_pancake3.png; sourceTree = "<group>"; };
+		A23DC1CE19530434003E5203 /* food_pancake3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_pancake3@2x.png"; sourceTree = "<group>"; };
+		A23DC1CF19530434003E5203 /* food_pancake4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_pancake4.png; sourceTree = "<group>"; };
+		A23DC1D019530434003E5203 /* food_pancake4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_pancake4@2x.png"; sourceTree = "<group>"; };
+		A23DC1D119530434003E5203 /* food_tea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food_tea.png; sourceTree = "<group>"; };
+		A23DC1D219530434003E5203 /* food_tea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food_tea@2x.png"; sourceTree = "<group>"; };
+		A23DC1D319530434003E5203 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		A23DC1D419530434003E5203 /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
+		A23DC1D519530434003E5203 /* sign_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sign_blank.png; sourceTree = "<group>"; };
+		A23DC1D619530434003E5203 /* sign_blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sign_blank@2x.png"; sourceTree = "<group>"; };
+		A23DC1D919530434003E5203 /* total_field_stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = total_field_stretch.png; sourceTree = "<group>"; };
+		A23DC1DA19530434003E5203 /* total_field_stretch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "total_field_stretch@2x.png"; sourceTree = "<group>"; };
+		A25CED4F1953172500AFEC2C /* PancakeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PancakeItem.h; sourceTree = "<group>"; };
+		A25CED501953172500AFEC2C /* PancakeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PancakeItem.m; sourceTree = "<group>"; };
+		A25CED521953180B00AFEC2C /* PancakeOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PancakeOrder.h; sourceTree = "<group>"; };
+		A25CED531953180B00AFEC2C /* PancakeOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PancakeOrder.m; sourceTree = "<group>"; };
+		A25CED5D1953221E00AFEC2C /* total_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = total_field.png; sourceTree = "<group>"; };
+		A25CED5E1953221E00AFEC2C /* total_field@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "total_field@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23DC16F1952BF54003E5203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC1781952BF54003E5203 /* CoreGraphics.framework in Frameworks */,
+				A23DC17A1952BF54003E5203 /* UIKit.framework in Frameworks */,
+				A23DC1761952BF54003E5203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23DC1901952BF54003E5203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC1951952BF54003E5203 /* XCTest.framework in Frameworks */,
+				A23DC1971952BF54003E5203 /* UIKit.framework in Frameworks */,
+				A23DC1961952BF54003E5203 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23DC1691952BF54003E5203 = {
+			isa = PBXGroup;
+			children = (
+				A23DC17B1952BF54003E5203 /* RussianPancake */,
+				A23DC19A1952BF54003E5203 /* RussianPancakeTests */,
+				A23DC1741952BF54003E5203 /* Frameworks */,
+				A23DC1731952BF54003E5203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A23DC1731952BF54003E5203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC1721952BF54003E5203 /* RussianPancake.app */,
+				A23DC1931952BF54003E5203 /* RussianPancakeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A23DC1741952BF54003E5203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC1751952BF54003E5203 /* Foundation.framework */,
+				A23DC1771952BF54003E5203 /* CoreGraphics.framework */,
+				A23DC1791952BF54003E5203 /* UIKit.framework */,
+				A23DC1941952BF54003E5203 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A23DC17B1952BF54003E5203 /* RussianPancake */ = {
+			isa = PBXGroup;
+			children = (
+				A25CED4E195316FA00AFEC2C /* Models */,
+				A23DC1841952BF54003E5203 /* PancakeAppDelegate.h */,
+				A23DC1851952BF54003E5203 /* PancakeAppDelegate.m */,
+				A23DC1871952BF54003E5203 /* Main.storyboard */,
+				A23DC18A1952BF54003E5203 /* PancakeViewController.h */,
+				A23DC18B1952BF54003E5203 /* PancakeViewController.m */,
+				A23DC18D1952BF54003E5203 /* Images.xcassets */,
+				A23DC17C1952BF54003E5203 /* Supporting Files */,
+			);
+			path = RussianPancake;
+			sourceTree = "<group>";
+		};
+		A23DC17C1952BF54003E5203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC1AA19530434003E5203 /* images */,
+				A23DC17D1952BF54003E5203 /* RussianPancake-Info.plist */,
+				A23DC17E1952BF54003E5203 /* InfoPlist.strings */,
+				A23DC1811952BF54003E5203 /* main.m */,
+				A23DC1831952BF54003E5203 /* RussianPancake-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A23DC19A1952BF54003E5203 /* RussianPancakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC1A01952BF54003E5203 /* RussianPancakeTests.m */,
+				A23DC19B1952BF54003E5203 /* Supporting Files */,
+			);
+			path = RussianPancakeTests;
+			sourceTree = "<group>";
+		};
+		A23DC19B1952BF54003E5203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC19C1952BF54003E5203 /* RussianPancakeTests-Info.plist */,
+				A23DC19D1952BF54003E5203 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A23DC1AA19530434003E5203 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A23DC1B619530434003E5203 /* bg_counter.png */,
+				A23DC1B719530434003E5203 /* bg_counter@2x.png */,
+				A23DC1B819530434003E5203 /* bg_wall.png */,
+				A23DC1B919530434003E5203 /* bg_wall@2x.png */,
+				A23DC1BA19530434003E5203 /* button_arrow.png */,
+				A23DC1BB19530434003E5203 /* button_arrow@2x.png */,
+				A23DC1BC19530434003E5203 /* button_arrow_left.png */,
+				A23DC1BD19530434003E5203 /* button_arrow_left@2x.png */,
+				A23DC1BE19530434003E5203 /* button_silver.png */,
+				A23DC1BF19530434003E5203 /* button_silver@2x.png */,
+				A23DC1C019530434003E5203 /* button_silver_stretch.png */,
+				A23DC1C119530434003E5203 /* button_silver_stretch@2x.png */,
+				A23DC1C319530434003E5203 /* chalkboard.png */,
+				A23DC1C419530434003E5203 /* chalkboard@2x.png */,
+				A23DC1C519530434003E5203 /* food_box.png */,
+				A23DC1C619530434003E5203 /* food_box@2x.png */,
+				A23DC1C719530434003E5203 /* food_coffee.png */,
+				A23DC1C819530434003E5203 /* food_coffee@2x.png */,
+				A23DC1C919530434003E5203 /* food_pancake1.png */,
+				A23DC1CA19530434003E5203 /* food_pancake1@2x.png */,
+				A23DC1CB19530434003E5203 /* food_pancake2.png */,
+				A23DC1CC19530434003E5203 /* food_pancake2@2x.png */,
+				A23DC1CD19530434003E5203 /* food_pancake3.png */,
+				A23DC1CE19530434003E5203 /* food_pancake3@2x.png */,
+				A23DC1CF19530434003E5203 /* food_pancake4.png */,
+				A23DC1D019530434003E5203 /* food_pancake4@2x.png */,
+				A23DC1D119530434003E5203 /* food_tea.png */,
+				A23DC1D219530434003E5203 /* food_tea@2x.png */,
+				A23DC1D319530434003E5203 /* person.png */,
+				A23DC1D419530434003E5203 /* person@2x.png */,
+				A23DC1D519530434003E5203 /* sign_blank.png */,
+				A23DC1D619530434003E5203 /* sign_blank@2x.png */,
+				A25CED5D1953221E00AFEC2C /* total_field.png */,
+				A25CED5E1953221E00AFEC2C /* total_field@2x.png */,
+				A23DC1D919530434003E5203 /* total_field_stretch.png */,
+				A23DC1DA19530434003E5203 /* total_field_stretch@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A25CED4E195316FA00AFEC2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A25CED4F1953172500AFEC2C /* PancakeItem.h */,
+				A25CED501953172500AFEC2C /* PancakeItem.m */,
+				A25CED521953180B00AFEC2C /* PancakeOrder.h */,
+				A25CED531953180B00AFEC2C /* PancakeOrder.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A23DC1711952BF54003E5203 /* RussianPancake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23DC1A41952BF54003E5203 /* Build configuration list for PBXNativeTarget "RussianPancake" */;
+			buildPhases = (
+				A23DC16E1952BF54003E5203 /* Sources */,
+				A23DC16F1952BF54003E5203 /* Frameworks */,
+				A23DC1701952BF54003E5203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RussianPancake;
+			productName = RussianPancake;
+			productReference = A23DC1721952BF54003E5203 /* RussianPancake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A23DC1921952BF54003E5203 /* RussianPancakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23DC1A71952BF54003E5203 /* Build configuration list for PBXNativeTarget "RussianPancakeTests" */;
+			buildPhases = (
+				A23DC18F1952BF54003E5203 /* Sources */,
+				A23DC1901952BF54003E5203 /* Frameworks */,
+				A23DC1911952BF54003E5203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23DC1991952BF54003E5203 /* PBXTargetDependency */,
+			);
+			name = RussianPancakeTests;
+			productName = RussianPancakeTests;
+			productReference = A23DC1931952BF54003E5203 /* RussianPancakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A23DC16A1952BF54003E5203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Pancake;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Oleg Pochtovy";
+				TargetAttributes = {
+					A23DC1921952BF54003E5203 = {
+						TestTargetID = A23DC1711952BF54003E5203;
+					};
+				};
+			};
+			buildConfigurationList = A23DC16D1952BF54003E5203 /* Build configuration list for PBXProject "RussianPancake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A23DC1691952BF54003E5203;
+			productRefGroup = A23DC1731952BF54003E5203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A23DC1711952BF54003E5203 /* RussianPancake */,
+				A23DC1921952BF54003E5203 /* RussianPancakeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23DC1701952BF54003E5203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC20219530434003E5203 /* food_tea@2x.png in Resources */,
+				A23DC20019530434003E5203 /* food_pancake4@2x.png in Resources */,
+				A23DC1FB19530434003E5203 /* food_pancake2.png in Resources */,
+				A23DC20119530434003E5203 /* food_tea.png in Resources */,
+				A23DC20519530434003E5203 /* sign_blank.png in Resources */,
+				A23DC1FA19530434003E5203 /* food_pancake1@2x.png in Resources */,
+				A23DC1F919530434003E5203 /* food_pancake1.png in Resources */,
+				A23DC1F819530434003E5203 /* food_coffee@2x.png in Resources */,
+				A23DC1EB19530434003E5203 /* button_arrow@2x.png in Resources */,
+				A23DC20919530434003E5203 /* total_field_stretch.png in Resources */,
+				A23DC20419530434003E5203 /* person@2x.png in Resources */,
+				A23DC18E1952BF54003E5203 /* Images.xcassets in Resources */,
+				A23DC1ED19530434003E5203 /* button_arrow_left@2x.png in Resources */,
+				A23DC1F019530434003E5203 /* button_silver_stretch.png in Resources */,
+				A23DC1F419530434003E5203 /* chalkboard@2x.png in Resources */,
+				A23DC1E719530434003E5203 /* bg_counter@2x.png in Resources */,
+				A23DC1EF19530434003E5203 /* button_silver@2x.png in Resources */,
+				A23DC1F319530434003E5203 /* chalkboard.png in Resources */,
+				A23DC1F119530434003E5203 /* button_silver_stretch@2x.png in Resources */,
+				A23DC1F719530434003E5203 /* food_coffee.png in Resources */,
+				A23DC1F519530434003E5203 /* food_box.png in Resources */,
+				A23DC1F619530434003E5203 /* food_box@2x.png in Resources */,
+				A23DC20A19530434003E5203 /* total_field_stretch@2x.png in Resources */,
+				A23DC20319530434003E5203 /* person.png in Resources */,
+				A23DC1FD19530434003E5203 /* food_pancake3.png in Resources */,
+				A23DC1FF19530434003E5203 /* food_pancake4.png in Resources */,
+				A25CED601953221E00AFEC2C /* total_field@2x.png in Resources */,
+				A23DC1EE19530434003E5203 /* button_silver.png in Resources */,
+				A23DC1E919530434003E5203 /* bg_wall@2x.png in Resources */,
+				A23DC1EC19530434003E5203 /* button_arrow_left.png in Resources */,
+				A23DC1E819530434003E5203 /* bg_wall.png in Resources */,
+				A23DC1801952BF54003E5203 /* InfoPlist.strings in Resources */,
+				A23DC1EA19530434003E5203 /* button_arrow.png in Resources */,
+				A23DC20619530434003E5203 /* sign_blank@2x.png in Resources */,
+				A25CED5F1953221E00AFEC2C /* total_field.png in Resources */,
+				A23DC1FC19530434003E5203 /* food_pancake2@2x.png in Resources */,
+				A23DC1891952BF54003E5203 /* Main.storyboard in Resources */,
+				A23DC1E619530434003E5203 /* bg_counter.png in Resources */,
+				A23DC1FE19530434003E5203 /* food_pancake3@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23DC1911952BF54003E5203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC19F1952BF54003E5203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23DC16E1952BF54003E5203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC18C1952BF54003E5203 /* PancakeViewController.m in Sources */,
+				A23DC1861952BF54003E5203 /* PancakeAppDelegate.m in Sources */,
+				A25CED511953172500AFEC2C /* PancakeItem.m in Sources */,
+				A25CED541953180B00AFEC2C /* PancakeOrder.m in Sources */,
+				A23DC1821952BF54003E5203 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23DC18F1952BF54003E5203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23DC1A11952BF54003E5203 /* RussianPancakeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A23DC1991952BF54003E5203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A23DC1711952BF54003E5203 /* RussianPancake */;
+			targetProxy = A23DC1981952BF54003E5203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A23DC17E1952BF54003E5203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23DC17F1952BF54003E5203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A23DC1871952BF54003E5203 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23DC1881952BF54003E5203 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A23DC19D1952BF54003E5203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A23DC19E1952BF54003E5203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A23DC1A21952BF54003E5203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A23DC1A31952BF54003E5203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A23DC1A51952BF54003E5203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianPancake/RussianPancake-Prefix.pch";
+				INFOPLIST_FILE = "RussianPancake/RussianPancake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A23DC1A61952BF54003E5203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianPancake/RussianPancake-Prefix.pch";
+				INFOPLIST_FILE = "RussianPancake/RussianPancake-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A23DC1A81952BF54003E5203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RussianPancake.app/RussianPancake";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianPancake/RussianPancake-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RussianPancakeTests/RussianPancakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A23DC1A91952BF54003E5203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RussianPancake.app/RussianPancake";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RussianPancake/RussianPancake-Prefix.pch";
+				INFOPLIST_FILE = "RussianPancakeTests/RussianPancakeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23DC16D1952BF54003E5203 /* Build configuration list for PBXProject "RussianPancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23DC1A21952BF54003E5203 /* Debug */,
+				A23DC1A31952BF54003E5203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23DC1A41952BF54003E5203 /* Build configuration list for PBXNativeTarget "RussianPancake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23DC1A51952BF54003E5203 /* Debug */,
+				A23DC1A61952BF54003E5203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23DC1A71952BF54003E5203 /* Build configuration list for PBXNativeTarget "RussianPancakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23DC1A81952BF54003E5203 /* Debug */,
+				A23DC1A91952BF54003E5203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A23DC16A1952BF54003E5203 /* Project object */;
+}
