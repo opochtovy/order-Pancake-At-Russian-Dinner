@@ -1,0 +1,22 @@
+order-Pancake-At-Russian-Dinner
+================================
+
+API illustrates blocks, work with web-service, GCD. The app itself is simple: users choose items from a menu to create an order, as if they were about to eat at a diner. 
+
+Additional class PancakeOrder represents the order and the operations that go along with an order: adding an item, removing an item, calculating the total for the order, and printing out an overview of the order.
+
+Key features of the Pancake app:
+
+- Buttons to add and remove current item and it’s quantity in chalkboard
+- Options (left, right) to view all inventory items
+- A nifty animation which shows the items being added or removed each time we tap the «+1» or «-1» buttons 
+- Button to get the total price for the order
+
+During my app’s realization I touched the following topics:
+
+1. How to use a web service to download the pancake menu in JSON format. My web service is simple PHP script that returns an array that has been JSON encoded. The array contains what’s known as associative arrays under PHP (they’re called dictionaries under Objective-C), that contain the name, price, and image file name for the item. 
+
+2. How to use blocks with NSArrays, for UIView animations, Grand Central Dispatch. API demonstrates using blocks for asynchronous processing, background tasks.
+
+3. Dispatch queues and Grand Central Dispatch
+While calling the web service to return the inventory items and assign them to the inventory array, we have a problem: the call to the web service is blocking and freezing the main thread and won’t allow it to change the label text. If only there was a separate queue you could use for that long operation that didn’t interfere with the main thread. Using Grand Central Dispatch, we can assign work (in the form of Blocks) to be done on our other queue that is separate and doesn’t block the main thread. 
